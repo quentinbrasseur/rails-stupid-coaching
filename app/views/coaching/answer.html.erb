@@ -1,0 +1,13 @@
+<h1><%= @question %></h1>
+
+  <% if @question.include? "?" %>
+
+  <h2>Silly question son...</h2>
+
+  <% else %>
+
+  <h2>I don't care my boy!</h2>
+
+  <% end %>
+
+<%= link_to "Ask for a new question", "ask" %>
